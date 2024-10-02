@@ -95,7 +95,7 @@ SPECTACULAR_SETTINGS = {
     'VERSION': '1.1.0',
     'SERVERS': [
         {
-            'url': 'https://api-atlas.ourkolkata.in/',
+            'url': 'https://atlas-api.ourkolkata.in/',
             'description': 'Production Server'
         },
         {
@@ -153,7 +153,7 @@ MINIO_BUCKET_NAME = config('MINIO_BUCKET_NAME')
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = get_random_secret_key()
 DEBUG = config('DEBUG', cast=bool)
-ALLOWED_HOSTS = ["api-atlas.ourkolkata.in",'localhost', '127.0.0.1',"ec2-3-111-147-124.ap-south-1.compute.amazonaws.com"]
+ALLOWED_HOSTS = ["api-atlas.ourkolkata.in",'localhost', 'atlas-api.ourkolkata.in', '127.0.0.1',"ec2-3-111-147-124.ap-south-1.compute.amazonaws.com"]
 # CORS_ALLOWED_ORIGINS = [
 #     "http://localhost:3001",
 #     "http://127.0.0.1:3001",
